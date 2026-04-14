@@ -1,0 +1,12 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="36" fill="#F5EDDE"/>
+  <circle cx="180" cy="126" r="170" fill="#D8F0E8"/>
+  <circle cx="1015" cy="495" r="170" fill="#F4D9CF"/>
+  <rect x="85" y="98" width="1030" height="434" rx="32" fill="white"/>
+  <text x="130" y="220" fill="#0D6D67" font-family="Arial, sans-serif" font-size="28" font-weight="700">HOUSEHOLD FINANCIAL TRIAGE</text>
+  <text x="130" y="315" fill="#14222C" font-family="Georgia, serif" font-size="72" font-weight="700">BridgeBudget</text>
+  <text x="130" y="385" fill="#4F6776" font-family="Arial, sans-serif" font-size="32">See your monthly cash gap, protect essentials first,</text>
+  <text x="130" y="430" fill="#4F6776" font-family="Arial, sans-serif" font-size="32">and get a practical recovery plan without logging in.</text>
+  <rect x="130" y="470" width="258" height="58" rx="29" fill="#0D6D67"/>
+  <text x="184" y="507" fill="white" font-family="Arial, sans-serif" font-size="26" font-weight="700">Free to use</text>
+</svg>

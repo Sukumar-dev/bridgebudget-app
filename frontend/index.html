@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BridgeBudget | A free monthly budget rescue planner</title>
+    <meta
+      name="description"
+      content="BridgeBudget helps households facing bill stress build a practical monthly recovery plan, prioritize essentials, and discover trusted support resources."
+    />
+    <meta
+      name="keywords"
+      content="budget planner, financial stress, debt help, emergency budget, household budget tool, bill prioritization, financial literacy"
+    />
+    <meta name="author" content="BridgeBudget" />
+    <meta name="theme-color" content="#0d6d67" />
+    <meta name="bridgebudget-api-base" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BridgeBudget | A free monthly budget rescue planner" />
+    <meta
+      property="og:description"
+      content="See where your money is going, protect essential bills first, and get a guided recovery plan without creating an account."
+    />
+    <meta property="og:url" content="https://bridgebudget.app/" />
+    <meta property="og:image" content="assets/social-preview.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BridgeBudget | A free monthly budget rescue planner" />
+    <meta
+      name="twitter:description"
+      content="A practical, no-login tool for households managing rent, debt, and cash shortfalls."
+    />
+    <meta name="twitter:image" content="assets/social-preview.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "BridgeBudget",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "BridgeBudget helps households under financial pressure build a safer month-to-month recovery plan, prioritize essentials, and find trusted assistance resources.",
+        "url": "https://bridgebudget.app/"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#planner">Skip to planner</a>
+
+    <header class="site-header">
+      <div class="container nav-shell">
+        <div>
+          <p class="eyebrow">Household financial triage</p>
+          <a class="brand" href="#top">BridgeBudget</a>
+        </div>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#how-it-works">How it works</a>
+          <a href="#planner">Planner</a>
+          <a href="#results">Results</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          Dark mode
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Free, private, no-login</p>
+            <h1>See your monthly cash gap and get a calmer recovery plan.</h1>
+            <p class="hero-text">
+              BridgeBudget helps you protect essential bills first, understand your debt pressure,
+              and find trusted next steps before a tight month turns into a crisis.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#planner">Start my plan</a>
+              <a class="button button-secondary" href="#how-it-works">See how it works</a>
+            </div>
+            <ul class="trust-list" aria-label="Product benefits">
+              <li>Built for mobile and desktop</li>
+              <li>Nothing is saved unless you choose to save it</li>
+              <li>Designed for real-world bill stress</li>
+            </ul>
+          </div>
+          <aside class="hero-panel" aria-label="Key outcomes">
+            <div class="metric-card">
+              <span class="metric-label">Stress score</span>
+              <strong id="previewStress">Waiting for your numbers</strong>
+              <p>A clear signal of whether this month is stable, tight, or critical.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Essential spending</span>
+              <strong id="previewEssentials">$0</strong>
+              <p>Housing, food, utilities, transport, healthcare, childcare, insurance.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Debt minimums</span>
+              <strong id="previewDebt">$0</strong>
+              <p>Your total required minimum debt payments this month.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="how-it-works" id="how-it-works">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Why this matters</p>
+            <h2>Shortfalls rarely come one at a time.</h2>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card">
+              <h3>1. Map the month</h3>
+              <p>
+                Enter your current net income, savings, essential spending, and any debt payments.
+              </p>
+            </article>
+            <article class="step-card">
+              <h3>2. Prioritize the right things</h3>
+              <p>
+                The tool separates survival costs from debt pressure so you can act in the right order.
+              </p>
+            </article>
+            <article class="step-card">
+              <h3>3. Get actionable next steps</h3>
+              <p>
+                Receive a 24-hour, 7-day, and 30-day plan plus trusted public-support pathways.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="planner" id="planner">
+        <div class="container planner-grid">
+          <div class="planner-intro">
+            <div class="section-heading">
+              <p class="eyebrow">Step-by-step planner</p>
+              <h2>Build your household recovery plan</h2>
+            </div>
+            <p>
+              Use monthly numbers after taxes. If a cost changes week to week, estimate a realistic
+              monthly average. This tool gives educational guidance, not legal or individualized
+              financial advice.
+            </p>
+            <div class="privacy-note">
+              <strong>Your privacy:</strong> calculations happen through the API, and nothing is
+              stored unless you click <span>Save this plan</span>.
+            </div>
+          </div>
+
+          <form id="budgetForm" class="budget-form" novalidate>
+            <fieldset class="form-card">
+              <legend>Household basics</legend>
+              <div class="field-grid two-col">
+                <label>
+                  ZIP code
+                  <input type="text" id="locationZip" name="location_zip" inputmode="numeric" maxlength="5" required />
+                </label>
+                <label>
+                  Household size
+                  <input type="number" id="householdSize" name="household_size" min="1" max="10" value="2" required />
+                </label>
+                <label>
+                  Monthly take-home income
+                  <input type="number" id="monthlyIncome" name="monthly_income" min="1" step="0.01" value="3200" required />
+                </label>
+                <label>
+                  Emergency savings available now
+                  <input type="number" id="savings" name="savings" min="0" step="0.01" value="300" required />
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-card">
+              <legend>Essential monthly costs</legend>
+              <div class="field-grid two-col">
+                <label>
+                  Housing
+                  <input type="number" name="housing" min="0" step="0.01" value="1200" required />
+                </label>
+                <label>
+                  Utilities
+                  <input type="number" name="utilities" min="0" step="0.01" value="180" required />
+                </label>
+                <label>
+                  Food
+                  <input type="number" name="food" min="0" step="0.01" value="450" required />
+                </label>
+                <label>
+                  Transport
+                  <input type="number" name="transport" min="0" step="0.01" value="220" required />
+                </label>
+                <label>
+                  Healthcare
+                  <input type="number" name="healthcare" min="0" step="0.01" value="80" required />
+                </label>
+                <label>
+                  Childcare
+                  <input type="number" name="childcare" min="0" step="0.01" value="0" required />
+                </label>
+                <label>
+                  Insurance
+                  <input type="number" name="insurance" min="0" step="0.01" value="120" required />
+                </label>
+                <label>
+                  Other essentials
+                  <input type="number" name="other_essentials" min="0" step="0.01" value="60" required />
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-card">
+              <legend>Debt payments</legend>
+              <p class="field-help">
+                Add only debts that require minimum monthly payments. Leave this blank if you have none.
+              </p>
+              <div id="debtList" class="debt-list" aria-live="polite"></div>
+              <button class="button button-secondary add-debt" id="addDebtButton" type="button">
+                Add debt
+              </button>
+            </fieldset>
+
+            <div class="form-actions">
+              <button class="button button-primary submit-button" id="submitButton" type="submit">
+                Analyze my month
+              </button>
+              <p class="status-text" id="formStatus" role="status" aria-live="polite"></p>
+            </div>
+            <div class="error-box hidden" id="errorBox" role="alert"></div>
+          </form>
+        </div>
+      </section>
+
+      <section class="results hidden" id="results" aria-live="polite">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Your result</p>
+            <h2>Your monthly stability snapshot</h2>
+          </div>
+
+          <div class="results-shell">
+            <div class="result-overview">
+              <div class="result-badge" id="stressBadge">Not analyzed yet</div>
+              <div class="overview-grid" id="overviewGrid"></div>
+            </div>
+
+            <div class="result-columns">
+              <article class="result-card">
+                <h3>Immediate action plan</h3>
+                <div id="actionPlan"></div>
+              </article>
+
+              <article class="result-card">
+                <h3>Debt strategy</h3>
+                <div id="debtStrategy"></div>
+              </article>
+            </div>
+
+            <article class="result-card">
+              <h3>Trusted support resources</h3>
+              <div class="resource-grid" id="resourceList"></div>
+            </article>
+
+            <div class="share-panel">
+              <button class="button button-secondary" id="savePlanButton" type="button" disabled>
+                Save this plan
+              </button>
+              <p class="status-text" id="saveStatus" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="#top">BridgeBudget</a>
+          <p>
+            A practical public-interest web tool for households navigating bill stress, debt, and
+            short-term financial instability.
+          </p>
+        </div>
+        <div>
+          <p class="footer-title">Important note</p>
+          <p>
+            BridgeBudget provides educational guidance only. For legal advice or urgent housing
+            emergencies, contact a licensed professional or local support service immediately.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <template id="debtTemplate">
+      <div class="debt-row">
+        <label>
+          Debt name
+          <input type="text" name="debt_name" maxlength="60" placeholder="Credit card" />
+        </label>
+        <label>
+          Balance
+          <input type="number" name="debt_balance" min="0" step="0.01" placeholder="3200" />
+        </label>
+        <label>
+          APR %
+          <input type="number" name="debt_apr" min="0" max="100" step="0.1" placeholder="29.9" />
+        </label>
+        <label>
+          Minimum payment
+          <input type="number" name="debt_minimum" min="0" step="0.01" placeholder="110" />
+        </label>
+        <button class="text-button remove-debt" type="button">Remove</button>
+      </div>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
