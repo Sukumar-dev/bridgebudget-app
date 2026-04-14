@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bridgebudget.app/sitemap.xml
+Sitemap: https://sukumar-dev.github.io/bridgebudget-app/sitemap.xml
